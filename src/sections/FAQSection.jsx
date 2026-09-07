@@ -78,10 +78,6 @@ export default function FAQSection() {
     setOpenId(openId === id ? null : id);
   };
 
-  const handleScrollToContact = () => {
-    openContactModal();
-  };
-
   // The 4 main cards for desktop placement matching Image 1
   const cardFramer = faqs.find((f) => f.id === "framer-build") || faqs[0];
   const cardDesign = faqs.find((f) => f.id === "what-design") || faqs[1];

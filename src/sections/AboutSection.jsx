@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import RedPin from "../components/ui/RedPin";
 import { FramerPaperclip } from "../components/ui/StickerChip";
 import {

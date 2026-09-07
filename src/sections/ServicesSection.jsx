@@ -169,22 +169,12 @@ const servicesList = [
 export default function ServicesSection() {
   const [hoveredService, setHoveredService] = useState(null);
   const [activeMobileService, setActiveMobileService] = useState(null);
-  const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   const mouseX = useMotionValue(-300);
   const mouseY = useMotionValue(-300);
   const springConfig = { damping: 28, stiffness: 360, mass: 0.35 };
   const smoothX = useSpring(mouseX, springConfig);
   const smoothY = useSpring(mouseY, springConfig);
-
-  useEffect(() => {
-    const checkTouch = () => {
-      setIsTouchDevice("ontouchstart" in window || navigator.maxTouchPoints > 0 || window.innerWidth < 768);
-    };
-    checkTouch();
-    window.addEventListener("resize", checkTouch);
-    return () => window.removeEventListener("resize", checkTouch);
-  }, []);
 
   useEffect(() => {
     const handleOutsideClick = (e) => {

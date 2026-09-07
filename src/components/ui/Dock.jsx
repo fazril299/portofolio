@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { openContactModal } from "./ContactModal";
 
 const framerSpring = {
   type: "spring",
