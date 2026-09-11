@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Home, User, Briefcase, Layers, MessageSquare, Code2 } from "lucide-react";
+import { X, Home, User, Briefcase, Layers, MessageSquare } from "lucide-react";
 
 export default function FlutterDrawer({ isOpen, onClose, onSelectTab }) {
   const drawerLinks = [
@@ -88,24 +88,6 @@ export default function FlutterDrawer({ isOpen, onClose, onSelectTab }) {
                   );
                 })}
               </div>
-            </div>
-
-            {/* Flutter Drawer Footer */}
-            <div className="pt-4 border-t border-neutral-200 space-y-2">
-              <div className="p-3 bg-neutral-100 rounded-2xl flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <Code2 className="w-4 h-4 text-[#02569B]" />
-                  <span className="text-[11px] font-bold text-neutral-700">
-                    Flutter 3.x Engine
-                  </span>
-                </div>
-                <span className="text-[10px] bg-[#02569B] text-white px-2 py-0.5 rounded-full font-bold">
-                  v3.35
-                </span>
-              </div>
-              <p className="text-[10px] text-neutral-400 text-center">
-                Crafted with React, Tailwind & Flutter Aesthetics
-              </p>
             </div>
           </motion.div>
         </div>
