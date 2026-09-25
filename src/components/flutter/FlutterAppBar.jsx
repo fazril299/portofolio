@@ -27,7 +27,7 @@ export default function FlutterAppBar({ activeSection = "Home", onMenuClick }) {
             className="text-[13px] font-[900] tracking-tight text-[#1A1A1A] uppercase flex items-center gap-1.5"
             style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
           >
-            CREATIE®
+            PORTOFOLIO
             <span className="w-1.5 h-1.5 rounded-full bg-[#02569B]" />
           </span>
 
